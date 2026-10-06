@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f4faf9;
+    color: #0b2b30;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #0b2b30;
+    color: white;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav button {
+    background: transparent;
+    color: white;
+    border: 1px solid #00c39a;
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+nav button:hover {
+    background: #00c39a;
+    color: #0b2b30;
+}
+
+.view {
+    display: none;
+    max-width: 900px;
+    margin: auto;
+    padding: 25px;
+}
+
+.view.active {
+    display: block;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    border: 1px solid #dcecec;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #dcecec;
+    border-radius: 8px;
+}
+
+textarea {
+    min-height: 80px;
+}
+
+button {
+    cursor: pointer;
+}
+
+form button,
+.card > button {
+    background: #028090;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    margin-top: 18px;
+}
+
+form button:hover,
+.card > button:hover {
+    background: #00a896;
+}
+
+.profile,
+.listing {
+    border: 1px solid #dcecec;
+    border-radius: 10px;
+    padding: 18px;
+    margin-top: 15px;
+}
+
+.tag {
+    display: inline-block;
+    background: #dff7f2;
+    color: #028090;
+    padding: 5px 10px;
+    border-radius: 15px;
+    margin: 4px;
+    font-size: 12px;
+}
+
+.invited {
+    color: white;
+    background: #02c39a;
+    padding: 6px 10px;
+    border-radius: 12px;
+}
