@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Reverse Internship Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Reverse.Internship.Portal</h1>
+
+        <nav>
+            <button onclick="showView('home')">Home</button>
+            <button onclick="showView('student')">I'm a Student</button>
+            <button onclick="showView('company')">I'm a Company</button>
+        </nav>
+    </header>
+
+
+    <!-- HOME -->
+
+    <section id="home" class="view active">
+
+        <div class="card">
+
+            <h2>Welcome 👋</h2>
+
+            <p>
+                Students create profiles and companies can discover
+                and invite talented students.
+            </p>
+
+            <button onclick="showView('student')">
+                Create Student Profile
+            </button>
+
+            <button onclick="showView('company')">
+                Post as Company
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- STUDENT -->
+
+    <section id="student" class="view">
+
+        <div class="card">
+
+            <h2>Create Your Student Profile</h2>
+
+            <form id="studentForm">
+
+                <label>Full Name</label>
+                <input id="studentName" required>
+
+                <label>Skills</label>
+                <input id="studentSkills"
+                       placeholder="Python, Java, React"
+                       required>
+
+                <label>University / Program</label>
+                <input id="studentSchool">
+
+                <label>Short Bio</label>
+                <textarea id="studentBio"></textarea>
+
+                <label>Portfolio / LinkedIn</label>
+                <input id="studentLink">
+
+                <button type="submit">
+                    Save Profile
+                </button>
+
+            </form>
+
+        </div>
+
+
+        <div class="card">
+
+            <h2>Available Internships</h2>
+
+            <div id="listings"></div>
+
+        </div>
+
+    </section>
+
+
+    <!-- COMPANY -->
+
+    <section id="company" class="view">
+
+        <div class="card">
+
+            <h2>Post an Internship</h2>
+
+            <form id="companyForm">
+
+                <label>Company Name</label>
+                <input id="companyName" required>
+
+                <label>Role</label>
+                <input id="companyRole" required>
+
+                <label>Required Skills</label>
+                <input id="companySkills"
+                       placeholder="Java, Python"
+                       required>
+
+                <label>Description</label>
+                <textarea id="companyDescription"></textarea>
+
+                <button type="submit">
+                    Post Internship
+                </button>
+
+            </form>
+
+        </div>
+
+
+        <div class="card">
+
+            <h2>Browse Students</h2>
+
+            <input id="skillFilter"
+                   placeholder="Search by skill">
+
+            <div id="students"></div>
+
+        </div>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
